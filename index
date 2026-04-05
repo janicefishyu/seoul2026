@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Seoul Trip 2026 🇰🇷</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; -webkit-tap-highlight-color: transparent; background-color: #f8fafc; }
+        .ios-blur { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="text-slate-800">
+    <div id="app" class="max-w-md mx-auto min-h-screen flex flex-col relative shadow-2xl bg-white">
+        <header class="sticky top-0 z-50 bg-white border-b border-slate-100 p-5 pb-4">
+            <div class="flex justify-between items-end">
+                <div>
+                    <p class="text-xs font-bold text-blue-500 uppercase tracking-widest">April 16-20</p>
+                    <h1 class="text-2xl font-black text-slate-900">首爾探險 🇰🇷</h1>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1 p-4">
+            <div class="bg-blue-600 rounded-3xl p-6 text-white shadow-xl">
+                <h2 class="text-3xl font-black">準備出發！</h2>
+                <p class="mt-2 opacity-80">請喺手機「加入主畫面」使用</p>
+            </div>
+            <div class="mt-6 space-y-4">
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100 italic text-slate-500 text-center">
+                    (按下方按鈕可以切換功能)
+                </div>
+            </div>
+        </main>
+        <nav class="fixed bottom-0 left-0 right-0 max-w-md mx-auto ios-blur border-t border-slate-100 flex justify-around p-4 pb-8 z-50">
+            <div class="text-blue-600 flex flex-col items-center"><i class="fas fa-route text-xl"></i><span class="text-[10px] font-bold mt-1">行程表</span></div>
+            <div class="text-slate-300 flex flex-col items-center"><i class="fas fa-wallet text-xl"></i><span class="text-[10px] font-bold mt-1">分帳</span></div>
+        </nav>
+    </div>
+    <script>
+        const { createApp, ref } = Vue;
+        createApp({ setup() { return { }; } }).mount('#app');
+    </script>
+</body>
+</html>
